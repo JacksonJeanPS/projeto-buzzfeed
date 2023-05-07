@@ -1,27 +1,23 @@
-# ProjetoBuzzfeed
+# Projeto BuzzFeed
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.7.
+Este é um projeto criado por JacksonJeanPS com o objetivo de replicar a página inicial do site BuzzFeed. O projeto foi desenvolvido utilizando HTML, CSS e JavaScript.
 
-## Development server
+## Como visualizar o projeto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Para visualizar o projeto, basta acessar o link: https://jacksonjeanps.github.io/projeto-buzzfeed/
 
-## Code scaffolding
+## Como baixar o projeto
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Caso queira baixar o projeto para visualizar em sua máquina local, siga os seguintes passos:
 
-## Build
+1. Abra o terminal em sua máquina
+2. Acesse o diretório onde deseja salvar o projeto
+3. Execute o seguinte comando:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```git clone https://github.com/JacksonJeanPS/projeto-buzzfeed.git```
 
-## Running unit tests
+4. Após finalizado o download, acesse a pasta do projeto e abra o arquivo "index.html" em um navegador.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Licença
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Este projeto está sob a licença MIT. Você pode ver mais detalhes em LICENSE.md.
