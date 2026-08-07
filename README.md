@@ -153,7 +153,7 @@ src/
 
 ## Demonstração
 
-![Screenshot do projeto](./demo-screenshot.png)
+![Screenshot do projeto](./demo-screenshot.svg)
 
 *A captura de tela acima mostra a página inicial do projeto BuzzFeed com o tema escuro ativado, grid de cards de conteúdo e o quiz interativo no final da página.*
 
