@@ -1,3 +1,50 @@
-<div class="home__container">
-  <app-quizz></app-quizz>
-</div>
+<section class="hero" id="home">
+  <div class="hero__content">
+    <h1 class="hero__title">buzzfeed</h1>
+    <p class="hero__subtitle">Notícias, entretenimento, quizzes e matérias curiosas</p>
+  </div>
+</section>
+
+<section class="categories" id="trending" aria-label="Filtrar por categoria">
+  <div class="category__container">
+    <button *ngFor="let category of categories"
+            class="category__btn"
+            [class.category__btn--active]="selectedCategory === category"
+            (click)="filterByCategory(category)"
+            [attr.aria-pressed]="selectedCategory === category">
+      {{category}}
+    </button>
+  </div>
+</section>
+
+<section class="posts" id="posts-grid">
+  <div class="posts__grid" #postsGrid>
+    <app-post-card *ngFor="let post of visiblePosts; let i = index"
+                   [post]="post"
+                   [style.animationDelay.px]="i * 100">
+    </app-post-card>
+  </div>
+
+  <div class="posts__loading" *ngIf="canLoadMore()">
+    <div class="loading-spinner" aria-label="Carregando mais posts"></div>
+  </div>
+
+  <button class="load-more__btn"
+          *ngIf="canLoadMore()"
+          (click)="loadMore()"
+          type="button">
+    Carregar mais
+  </button>
+
+  <p class="no-results" *ngIf="!allLoaded && visiblePosts.length === 0">
+    Nenhum post encontrado nesta categoria.
+  </p>
+</section>
+
+<section class="quizz-section" id="quizz" aria-labelledby="quizz-heading">
+  <div class="quizz__wrapper">
+    <h2 id="quizz-heading" class="quizz__heading">Já experimentou nossos quizzes?</h2>
+    <p class="quizz__description">Descubra qual personagem, super-herói ou personalidade combina com você!</p>
+    <app-quizz></app-quizz>
+  </div>
+</section>
