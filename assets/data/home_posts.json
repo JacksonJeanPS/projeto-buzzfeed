@@ -1,0 +1,124 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "10 Curiosidades Surpreendentes Sobre o Espaço que Você Não Sabia",
+      "category": "Ciência",
+      "excerpt": "Você sabia que existe um dia no espaço? Descubra mais fatos incríveis sobre o universo que vai te deixar fascinado.",
+      "imageUrl": "gradient",
+      "imageGradient": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+      "link": "#",
+      "isQuiz": false
+    },
+    {
+      "id": 2,
+      "title": "Qual É o Seu Verdadeiro Estilo de Gato? Faça este Quiz e Descubra",
+      "category": "Quizzes",
+      "excerpt": "Você é mais do tipo gato doméstico carinhoso ou felino selvagem independente? Descubra qual raça de gato você realmente é!",
+      "imageUrl": "gradient",
+      "imageGradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "link": "#quizz",
+      "isQuiz": true
+    },
+    {
+      "id": 3,
+      "title": "15 Dicas Infalíveis para Cultivar Hortaliças Urbanas na Sua Cozinha",
+      "category": "Culinária",
+      "excerpt": "Aprenda a cultivar hierbas, tomates e mais vegetais diretamente em casa, mesmo sem jardim. Ideal para apartamentos!",
+      "imageUrl": "gradient",
+      "imageGradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "link": "#",
+      "isQuiz": false
+    },
+    {
+      "id": 4,
+      "title": "Você Seria Herói ou Vilão? Faça o Quiz e Descubra sua Verdadeira Natureza",
+      "category": "Quizzes",
+      "excerpt": "Responda a estas perguntas e descubra se sua personalidade combina mais com um herói ou um vilão!",
+      "imageUrl": "gradient",
+      "imageGradient": "linear-gradient(135deg, #fa709a 0%, #fee149 100%)",
+      "link": "#quizz-hero",
+      "isQuiz": true
+    },
+    {
+      "id": 5,
+      "title": "Top 20 Séries que Vão Explodir em Popularidade em 2024",
+      "category": "Entretenimento",
+      "excerpt": "Confira nossa lista atualizada com as séries mais aguardadas do ano, incluindo novos lançamentos e temporadas retomadas.",
+      "imageUrl": "gradient",
+      "imageGradient": "linear-gradient(135deg, #12c2e9 0%, #c6306c 100%)",
+      "link": "#",
+      "isQuiz": false
+    },
+    {
+      "id": 6,
+      "title": "8 Sinais de que Você Está com Estresse e Como Aliviar Agora",
+      "category": "Bem-estar",
+      "excerpt": "Reconheça os sinais de alerta do estresse e descubra técnicas simples para recarregar suas energias hoje mesmo.",
+      "imageUrl": "gradient",
+      "imageGradient": "linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%)",
+      "link": "#",
+      "isQuiz": false
+    },
+    {
+      "id": 7,
+      "title": "Qual Personagem de Filme Você Seria? Faça o Quiz Divertido",
+      "category": "Quizzes",
+      "excerpt": "Descubra qual personagem icônico do cinema combine com o seu temperamento fazendo nosso quiz rápido!",
+      "imageUrl": "gradient",
+      "imageGradient": "linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%)",
+      "link": "#quizz",
+      "isQuiz": true
+    },
+    {
+      "id": 8,
+      "title": "Como Fazer o Melhor Pão Caseiro: Receita Passo a Passo com Fotos",
+      "category": "Culinária",
+      "excerpt": "Aprenda a fazer pão caseiro crocante por fora e macio por dentro com esta receita infalível para iniciantes.",
+      "imageUrl": "gradient",
+      "imageGradient": "linear-gradient(135deg, #fbc2eb 0%, #a6c2e9 100%)",
+      "link": "#",
+      "isQuiz": false
+    },
+    {
+      "id": 9,
+      "title": "12 Apps Gratuitos Essenciais para Produtividade que Você Precisa Conhecer",
+      "category": "Tecnologia",
+      "excerpt": "Organize sua rotina, gerencie tarefas e boosting sua produtividade com estes aplicativos indispensáveis.",
+      "imageUrl": "gradient",
+      "imageGradient": "linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%)",
+      "link": "#",
+      "isQuiz": false
+    },
+    {
+      "id": 10,
+      "title": "Desafio: Quantos Detalhes você Anota Nesta Imagem? Teste os Seus Olhos",
+      "category": "Quizzes",
+      "excerpt": "Olhe para esta imagem por 10 segundos e depois tente responder: você consegue notar todos os detalhes?",
+      "imageUrl": "gradient",
+      "imageGradient": "linear-gradient(135deg, #ffecd2 0%, #fcb07b 100%)",
+      "link": "#quizz",
+      "isQuiz": true
+    },
+    {
+      "id": 11,
+      "title": "7 Receitas Rápidas de Jantar que Você Prepara em Menos de 20 Minutos",
+      "category": "Culinária",
+      "excerpt": "Quando o cansaço bate, essas receitas rápidas e saborosas vão salvar seu jantar sem complicação.",
+      "imageUrl": "gradient",
+      "imageGradient": "linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%)",
+      "link": "#",
+      "isQuiz": false
+    },
+    {
+      "id": 12,
+      "title": "Qual É o Seu Signo do Zodíaco Interior? Faça o Quiz e Descubra",
+      "category": "Quizzes",
+      "excerpt": "Você segue as traits do seu signo ou tem uma personalidade mais do que o mapa estelar indica? Descubra agora!",
+      "imageUrl": "gradient",
+      "imageGradient": "linear-gradient(135deg, #fbc2eb 0%, #a6c2e9 100%)",
+      "link": "#quizz",
+      "isQuiz": true
+    }
+  ]
+}
