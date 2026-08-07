@@ -1,0 +1,56 @@
+<footer class="site-footer">
+  <div class="footer__container">
+    <div class="footer__top">
+      <div class="footer__logo">
+        <img src="assets/imgs/logo.png"
+             alt=""
+             width="32"
+             height="32"
+             loading="lazy" />
+        <span>buzzfeed</span>
+      </div>
+      <p class="footer__tagline">Esta é uma réplica da página inicial do BuzzFeed feita com Angular, HTML, CSS e TypeScript como projeto de portfólio.</p>
+    </div>
+
+    <div class="footer__links">
+      <div class="footer__column">
+        <h4>Sobre</h4>
+        <ul>
+          <li><a href="#about">Quem somos</a></li>
+          <li><a href="#careers">Carreiras</a></li>
+          <li><a href="https://github.com/JacksonJeanPS/projeto-buzzfeed" target="_blank" rel="noopener noreferrer">Código aberto</a></li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <h4>Secções</h4>
+        <ul>
+          <li><a href="#trending">Trending</a></li>
+          <li><a href="#quizz">Quizzes</a></li>
+          <li><a href="#videos">Vídeos</a></li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="https://github.com/JacksonJeanPS/projeto-buzzfeed/blob/main/LICENSE.md" target="_blank" rel="noopener noreferrer">Licença MIT</a></li>
+          <li><a href="#privacy">Privacidade</a></li>
+          <li><a href="#terms">Termos</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <p>&copy; {{currentYear}} BuzzFeed Brasil. Este é um projeto de réplica para fins educacionais.</p>
+    <div class="footer__social">
+      <a *ngFor="let link of socialLinks"
+         [href]="link.href"
+         target="_blank"
+         rel="noopener noreferrer"
+         [attr.aria-label]="link.label"
+         class="social-link">
+        {{link.label}}
+      </a>
+    </div>
+  </div>
+</footer>

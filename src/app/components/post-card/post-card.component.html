@@ -1,0 +1,26 @@
+<div class="post-card"
+     [class.post-card--featured]="post.isQuiz"
+     role="article"
+     [attr.aria-label]="post.title"
+     (keydown.enter)="onClick()"
+     (keydown.space)="onClick()">
+  <div class="post-card__image"
+       [ngStyle]="post.imageGradient ? {'background': post.imageGradient} : {}"
+       [class.post-card__image--placeholder]="!post.imageUrl || post.imageUrl === 'gradient'">
+    <img *ngIf="post.imageUrl && post.imageUrl !== 'gradient'"
+         [src]="post.imageUrl"
+         [alt]="post.title"
+         loading="lazy"
+         (error)="onImageError($event)" />
+    <div class="post-card__category-badge">{{post.category}}</div>
+  </div>
+  <div class="post-card__content">
+    <h3 class="post-card__title">{{post.title}}</h3>
+    <p class="post-card__excerpt">{{post.excerpt}}</p>
+    <a [href]="post.link"
+       class="post-card__link"
+       [attr.aria-label]="(post.link === '#quizz' || post.link === '#quizz-hero') ? ('Fazer quiz: ' + post.title) : ('Leia mais: ' + post.title)">
+      {{ (post.link === '#quizz' || post.link === '#quizz-hero') ? 'Fazer Quiz' : 'Leia mais' }}
+    </a>
+  </div>
+</div>

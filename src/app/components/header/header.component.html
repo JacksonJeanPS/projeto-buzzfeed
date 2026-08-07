@@ -1,0 +1,46 @@
+<header class="site-header">
+  <div class="header__container">
+    <div class="header__logo">
+      <img src="assets/imgs/logo.png"
+           alt="BuzzFeed Brasil - Logo"
+           width="40"
+           height="40"
+           loading="eager" />
+      <span class="header__logo-text">buzzfeed</span>
+    </div>
+
+    <nav class="header__nav" [class.header__nav--open]="menuOpen" role="navigation" aria-label="Navegação principal">
+      <ul class="nav__list">
+        <li *ngFor="let link of navLinks">
+          <a [href]="link.href"
+             class="nav__link"
+             (click)="menuOpen = false"
+             [attr.aria-label]="link.label">
+            {{link.label}}
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="header__actions">
+      <button type="button"
+              class="theme-toggle"
+              (click)="toggleTheme()"
+              [attr.aria-label]="darkMode ? 'Ativar modo claro' : 'Ativar modo escuro'"
+              aria-pressed="false">
+        <span class="theme-toggle__icon">{{darkMode ? '☀️' : '🌙'}}</span>
+      </button>
+
+      <button type="button"
+              class="menu-toggle"
+              (click)="toggleMenu()"
+              [attr.aria-expanded]="menuOpen"
+              [attr.aria-label]="menuOpen ? 'Fechar menu' : 'Abrir menu'"
+              aria-controls="header-nav">
+        <span class="menu-toggle__bar"></span>
+        <span class="menu-toggle__bar"></span>
+        <span class="menu-toggle__bar"></span>
+      </button>
+    </div>
+  </div>
+</header>
