@@ -1,20 +1,33 @@
-<div class="quizz__container">
-  <div class="quizz_logo">
-    <img src="../../../assets/imgs/logo.png" alt="" srcset="">
-    <h3>{{title}}</h3>
+<div class="quizz__container" role="region" aria-label="Quiz interativo">
+  <div class="quizz__logo">
+    <img src="assets/imgs/logo.png"
+         alt="Logo do BuzzFeed"
+         width="48"
+         height="48"
+         loading="eager" />
+    <h3 class="quizz__title">{{title}}</h3>
   </div>
-  <div *ngIf=!finished class="quizz_questions">
-    <h3>{{questionSelected.question}}</h3>
+
+  <div *ngIf="!finished" class="quizz__questions">
+    <h3 class="quizz__question-text">{{questionSelected?.question}}</h3>
   </div>
-  <div *ngIf=!finished class="quizz_options">
-    <button *ngFor="let option of questionSelected.options; let i = index"
-    (click) = "playerChoose(option.alias)"
-    class="btn-option">
-        {{option.name}}
+
+  <div *ngIf="!finished" class="quizz__options">
+    <button *ngFor="let option of questionSelected?.options; let i = index"
+            (click)="playerChoose(option.alias)"
+            class="btn-option"
+            [attr.aria-label]="'Opção ' + option.name">
+      {{option.name}}
     </button>
   </div>
-  <div *ngIf=finished class="quiz_results">
-    <h3>O SEU RESULTADO É: </h3>
-    <p>{{answersSelected}}</p>
+
+  <div *ngIf="finished" class="quizz__results">
+    <h3 class="quizz__results-title">O SEU RESULTADO É:</h3>
+    <p class="quizz__results-text">{{answersSelected}}</p>
+    <button class="btn-option btn-restart"
+            (click)="restartQuiz()"
+            aria-label="Recomecar o quiz">
+      Tentar novamente
+    </button>
   </div>
 </div>

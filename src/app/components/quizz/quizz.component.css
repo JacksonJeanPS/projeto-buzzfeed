@@ -1,106 +1,195 @@
+/* Quizz Component - Organized by Section */
+
 @import url("https://fonts.googleapis.com/css2?family=Braah+One&display=swap");
 
+/* Container */
 .quizz__container {
-  width: 80%;
-  margin: auto;
-  margin-top: 58px;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 24px;
+  box-sizing: border-box;
 }
 
-.quizz_logo {
+/* Logo */
+.quizz__logo {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
-.quizz_logo h3 {
-  margin-top: 40px;
-  font-family: "braah one", serif;
-  font-size: 35px;
-  color: #b60909;
-  filter: drop-shadow(2px 2px 0.25em rgba(255, 255, 255, 10));
+.quizz__logo img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
 }
 
-.quizz_questions {
+.quizz__title {
+  margin-top: 16px;
+  font-family: "Braah One", "Arial", sans-serif;
+  font-size: 28px;
+  color: var(--accent-color);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px;
+}
+
+/* Questions */
+.quizz__questions {
   display: flex;
-  background-color: #fcfcfccc;
   justify-content: center;
   align-items: center;
-  border-radius: 8px;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
   width: 100%;
-  height: 125px;
-  font-size: 22px;
-  font-family: "braah one";
+  min-height: 120px;
+  padding: 24px;
   margin-bottom: 20px;
-  letter-spacing: 2px;
-
-  -webkit-backdrop-filter: blur(15px);
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s ease;
 }
 
-.quizz_questions h3 {
-  color: #b60909;
-  text-shadow: 1px 1px 3px #ffffff;
+.quizz__question-text {
+  color: var(--accent-color);
+  font-family: var(--font-sans);
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.4;
 }
 
-.quizz_options {
+/* Options */
+.quizz__options {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: auto;
+  gap: 10px;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .btn-option {
-  border-radius: 8px;
-  background-color: #b60909a4;
-  width: 40%;
-  display: inline-block;
+  border-radius: 12px;
+  background-color: var(--accent-color);
+  width: 100%;
+  max-width: 320px;
+  padding: 14px 20px;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  border: none;
   cursor: pointer;
-  color: #fcfcfc;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  padding: 16px 31px;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px #b60909;
-  margin: 5px;
-  box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.35);
+  text-align: left;
+  box-shadow: var(--shadow-md);
+  transition: all 0.2s ease;
+  backdrop-filter: blur(5px);
 }
 
 .btn-option:hover {
-  background-color: #b60909;
+  background-color: var(--accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 48, 64, 0.25);
+}
+
+.btn-option:focus {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
 }
 
 .btn-option:active {
-  position: relative;
-  top: 1px;
+  transform: translateY(0);
 }
 
-.quiz_results {
-  margin: auto;
-  width: 80%;
-  height: 200px;
-  background-color: #fcfcfca8;
-  border-radius: 10px;
+.btn-restart {
+  background-color: var(--bg-tertiary);
+  color: var(--text-primary);
+  margin-top: 16px;
+}
+
+.btn-restart:hover {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+
+/* Results */
+.quizz__results {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.438);
+  gap: 16px;
+  padding: 32px;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+  animation: fadeIn 0.6s ease;
 }
 
-.quiz_results h3 {
-  margin-bottom: 20px;
-  font-size: 30px;
-  font-family: "braah one";
+.quizz__results-title {
+  font-family: "Braah One", "Arial", sans-serif;
+  font-size: 28px;
+  color: var(--accent-color);
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-.quiz_results p {
-  font-size: 25px;
-  font-family: sans-serif;
+.quizz__results-text {
+  font-family: var(--font-sans);
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--text-primary);
+  line-height: 1.5;
 }
 
-.next_question {
-  display: flex;
-  justify-content: center;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .quizz__container {
+    padding: 16px;
+  }
+
+  .quizz__title {
+    font-size: 22px;
+  }
+
+  .quizz__question-text {
+    font-size: 16px;
+  }
+
+  .btn-option {
+    font-size: 14px;
+    padding: 12px 16px;
+  }
+
+  .quizz__results {
+    padding: 24px 16px;
+  }
+
+  .quizz__results-title {
+    font-size: 22px;
+  }
+
+  .quizz__results-text {
+    font-size: 18px;
+  }
 }
